@@ -1,0 +1,1308 @@
+{
+  "success": true,
+  "selectedAlgos": [
+    {
+      "id": "692811d5b3dc6cfbe85053a2",
+      "name": "Delta-Rotation Credit Spread Expiry",
+      "category": "Credit Spread",
+      "sharpe": 1.92,
+      "sortino": 3.16,
+      "calmar": 3.29,
+      "maxDrawdown": -39.89,
+      "trades3M": 26,
+      "winMonth": 76.92,
+      "winQuarter": 100.0,
+      "pnl3M": 24.6,
+      "pnl6M": 109.69,
+      "pnl1Y": 148.95,
+      "minCapital": 100000.0,
+      "rupeeDrawdown": 39890.0,
+      "heldOverlapTrades": 2,
+      "passCount": 21,
+      "cautionCount": 2,
+      "failCount": 2,
+      "criticalFailed": false,
+      "criticalFailReason": null,
+      "institutionalScore": 67.6,
+      "checklist": [
+        {
+          "id": 1,
+          "pillar": "Return and Risk Quality",
+          "name": "Sharpe Ratio",
+          "benchmark": "1.5+ preferred",
+          "value": "1.92",
+          "status": "PASS",
+          "note": "Superior risk-adjusted return density"
+        },
+        {
+          "id": 2,
+          "pillar": "Return and Risk Quality",
+          "name": "Sortino Ratio",
+          "benchmark": "Well above Sharpe",
+          "value": "3.16",
+          "status": "PASS",
+          "note": "Downside risk is heavily truncated"
+        },
+        {
+          "id": 3,
+          "pillar": "Return and Risk Quality",
+          "name": "Calmar Ratio",
+          "benchmark": "2.0+ preferred",
+          "value": "3.29",
+          "status": "PASS",
+          "note": "CAGR comfortably outpaces maximum drawdown"
+        },
+        {
+          "id": 4,
+          "pillar": "Return and Risk Quality",
+          "name": "Max Drawdown %",
+          "benchmark": "Under 25% of buffer",
+          "value": "-39.9%",
+          "status": "CAUTION",
+          "note": "Moderate drawdown (monitor risk)"
+        },
+        {
+          "id": 5,
+          "pillar": "Return and Risk Quality",
+          "name": "Annualised Volatility",
+          "benchmark": "Lower is better",
+          "value": "71.5%",
+          "status": "FAIL",
+          "note": "Higher volatility swings"
+        },
+        {
+          "id": 6,
+          "pillar": "Return and Risk Quality",
+          "name": "Worst Month Drawdown",
+          "benchmark": "Sit-through tolerance (< 15%)",
+          "value": "-13.2%",
+          "status": "PASS",
+          "note": "Easily survivable single-month drawdown"
+        },
+        {
+          "id": 7,
+          "pillar": "Return and Risk Quality",
+          "name": "Max Consecutive Losses",
+          "benchmark": "<= 5-6 losses",
+          "value": "4 in a row",
+          "status": "PASS",
+          "note": "Short losing streaks prevent psychological tilt"
+        },
+        {
+          "id": 8,
+          "pillar": "Consistency",
+          "name": "Win-Month %",
+          "benchmark": "70%+ preferred",
+          "value": "76.9%",
+          "status": "PASS",
+          "note": "Consistently profitable month-over-month"
+        },
+        {
+          "id": 9,
+          "pillar": "Consistency",
+          "name": "Win-Quarter %",
+          "benchmark": "75%+ preferred",
+          "value": "100.0%",
+          "status": "PASS",
+          "note": "Robust quarter-by-quarter survival track record"
+        },
+        {
+          "id": 10,
+          "pillar": "Consistency",
+          "name": "3M, 6M & 1Y PnL Positive",
+          "benchmark": "All 3 must be > 0",
+          "value": "3M: +24.6%, 6M: +109.7%, 1Y: +148.9%",
+          "status": "PASS",
+          "note": "True compounding across all periods (no single-cycle illusion)"
+        },
+        {
+          "id": 11,
+          "pillar": "Consistency",
+          "name": "Mathematical Expectancy",
+          "benchmark": "Positive net edge > 0",
+          "value": "+1.05% per trade",
+          "status": "PASS",
+          "note": "Win rate is supported by strong payoff asymmetry"
+        },
+        {
+          "id": 12,
+          "pillar": "Consistency",
+          "name": "Risk : Reward Ratio",
+          "benchmark": ">= 1.0 (AvgWin / AvgLoss)",
+          "value": "1.27 : 1",
+          "status": "PASS",
+          "note": "Favorable payoff: profits exceed average losses"
+        },
+        {
+          "id": 13,
+          "pillar": "Reliability of the Numbers",
+          "name": "Trade Count in 3M",
+          "benchmark": ">= 15 - 20 trades (avoid Ratio-Fluxer trap)",
+          "value": "26 trades",
+          "status": "PASS",
+          "note": "Statistically sound sample size"
+        },
+        {
+          "id": 14,
+          "pillar": "Reliability of the Numbers",
+          "name": "Track Record Duration",
+          "benchmark": ">= 6 months active",
+          "value": "Verified live on Stratzy",
+          "status": "PASS",
+          "note": "Battle-tested through multiple expiry cycles and market regimes"
+        },
+        {
+          "id": 15,
+          "pillar": "Reliability of the Numbers",
+          "name": "Backtest vs Live Sanity",
+          "benchmark": "Real live execution match",
+          "value": "Verified Signals",
+          "status": "PASS",
+          "note": "Official past advices confirmed on Stratzy advisor endpoints"
+        },
+        {
+          "id": 16,
+          "pillar": "Fit for Your Account",
+          "name": "Minimum Capital vs Buffer",
+          "benchmark": "<= \u20b91,00,000 (User 1L Cap)",
+          "value": "\u20b9100,000",
+          "status": "PASS",
+          "note": "Fits within user's \u20b91,00,000 capital limit"
+        },
+        {
+          "id": 17,
+          "pillar": "Fit for Your Account",
+          "name": "Risk Classification",
+          "benchmark": "Low or Medium preferred",
+          "value": "Very high",
+          "status": "FAIL",
+          "note": "Aggressive volatility tier"
+        },
+        {
+          "id": 18,
+          "pillar": "Fit for Your Account",
+          "name": "Rupee Drawdown on Lot Size",
+          "benchmark": "<= \u20b935,000 on 1 lot",
+          "value": "\u20b939,890",
+          "status": "CAUTION",
+          "note": "Rupee drawdown requires larger buffer"
+        },
+        {
+          "id": 19,
+          "pillar": "Fit for Your Account",
+          "name": "Trade Frequency",
+          "benchmark": "2 - 5 trades/week",
+          "value": "2.0 trades/wk",
+          "status": "PASS",
+          "note": "Optimal trade pacing: fast feedback without over-churn"
+        },
+        {
+          "id": 20,
+          "pillar": "Fit for Your Account",
+          "name": "Charges & Slippage Drag",
+          "benchmark": "< 15% of gross PnL",
+          "value": "~8-12% drag",
+          "status": "PASS",
+          "note": "Spreads and straddles have predictable slippage profiles"
+        },
+        {
+          "id": 21,
+          "pillar": "Portfolio Fit",
+          "name": "Family & Strategy Diversity",
+          "benchmark": "Credit Spread, Straddle & Strangle balance",
+          "value": "Credit Spread",
+          "status": "PASS",
+          "note": "Adds Credit Spread exposure to diversify existing credit spread concentration"
+        },
+        {
+          "id": 22,
+          "pillar": "Portfolio Fit",
+          "name": "Correlation to Held Algos",
+          "benchmark": "Low correlation",
+          "value": "Independent engine",
+          "status": "PASS",
+          "note": "Does not share identical trigger indicators"
+        },
+        {
+          "id": 23,
+          "pillar": "Portfolio Fit",
+          "name": "Live Trade Overlap with Zen/IV/Damper",
+          "benchmark": "0 - 4 overlapping trades",
+          "value": "2 overlapping trades (vs Zen)",
+          "status": "PASS",
+          "note": "Excellent: Clean non-overlapping signals (zero duplicate lots)"
+        },
+        {
+          "id": 24,
+          "pillar": "Portfolio Fit",
+          "name": "Entry Timing Pattern",
+          "benchmark": "Avoid 10:30-11:00 AM put spikes",
+          "value": "Regime adaptive",
+          "status": "PASS",
+          "note": "Execution time distributed across trading day"
+        },
+        {
+          "id": 25,
+          "pillar": "Portfolio Fit",
+          "name": "Directional & Overnight Balance",
+          "benchmark": "CE/PE & Intraday/Overnight balance",
+          "value": "Non-directional / Hedged",
+          "status": "PASS",
+          "note": "Neutralizes directional index trend bias"
+        }
+      ],
+      "_sim_key": [
+        1.9,
+        3.3,
+        -39.9,
+        149.0,
+        77.0
+      ],
+      "familyGroup": "Credit Spread",
+      "rank": 1
+    },
+    {
+      "id": "687d08f09107a80e07401e57",
+      "name": "Curvature Credit Spread Overnight",
+      "category": "Credit Spread",
+      "sharpe": 2.1,
+      "sortino": 3.58,
+      "calmar": 5.37,
+      "maxDrawdown": -27.97,
+      "trades3M": 45,
+      "winMonth": 81.25,
+      "winQuarter": 100.0,
+      "pnl3M": 15.55,
+      "pnl6M": 47.41,
+      "pnl1Y": 147.8,
+      "minCapital": 100000.0,
+      "rupeeDrawdown": 27970.0,
+      "heldOverlapTrades": 8,
+      "passCount": 18,
+      "cautionCount": 6,
+      "failCount": 1,
+      "criticalFailed": false,
+      "criticalFailReason": null,
+      "institutionalScore": 67.0,
+      "checklist": [
+        {
+          "id": 1,
+          "pillar": "Return and Risk Quality",
+          "name": "Sharpe Ratio",
+          "benchmark": "1.5+ preferred",
+          "value": "2.10",
+          "status": "PASS",
+          "note": "Superior risk-adjusted return density"
+        },
+        {
+          "id": 2,
+          "pillar": "Return and Risk Quality",
+          "name": "Sortino Ratio",
+          "benchmark": "Well above Sharpe",
+          "value": "3.58",
+          "status": "PASS",
+          "note": "Downside risk is heavily truncated"
+        },
+        {
+          "id": 3,
+          "pillar": "Return and Risk Quality",
+          "name": "Calmar Ratio",
+          "benchmark": "2.0+ preferred",
+          "value": "5.37",
+          "status": "PASS",
+          "note": "CAGR comfortably outpaces maximum drawdown"
+        },
+        {
+          "id": 4,
+          "pillar": "Return and Risk Quality",
+          "name": "Max Drawdown %",
+          "benchmark": "Under 25% of buffer",
+          "value": "-28.0%",
+          "status": "CAUTION",
+          "note": "Moderate drawdown (monitor risk)"
+        },
+        {
+          "id": 5,
+          "pillar": "Return and Risk Quality",
+          "name": "Annualised Volatility",
+          "benchmark": "Lower is better",
+          "value": "68.5%",
+          "status": "FAIL",
+          "note": "Higher volatility swings"
+        },
+        {
+          "id": 6,
+          "pillar": "Return and Risk Quality",
+          "name": "Worst Month Drawdown",
+          "benchmark": "Sit-through tolerance (< 15%)",
+          "value": "-6.8%",
+          "status": "PASS",
+          "note": "Easily survivable single-month drawdown"
+        },
+        {
+          "id": 7,
+          "pillar": "Return and Risk Quality",
+          "name": "Max Consecutive Losses",
+          "benchmark": "<= 5-6 losses",
+          "value": "4 in a row",
+          "status": "PASS",
+          "note": "Short losing streaks prevent psychological tilt"
+        },
+        {
+          "id": 8,
+          "pillar": "Consistency",
+          "name": "Win-Month %",
+          "benchmark": "70%+ preferred",
+          "value": "81.2%",
+          "status": "PASS",
+          "note": "Consistently profitable month-over-month"
+        },
+        {
+          "id": 9,
+          "pillar": "Consistency",
+          "name": "Win-Quarter %",
+          "benchmark": "75%+ preferred",
+          "value": "100.0%",
+          "status": "PASS",
+          "note": "Robust quarter-by-quarter survival track record"
+        },
+        {
+          "id": 10,
+          "pillar": "Consistency",
+          "name": "3M, 6M & 1Y PnL Positive",
+          "benchmark": "All 3 must be > 0",
+          "value": "3M: +15.6%, 6M: +47.4%, 1Y: +147.8%",
+          "status": "PASS",
+          "note": "True compounding across all periods (no single-cycle illusion)"
+        },
+        {
+          "id": 11,
+          "pillar": "Consistency",
+          "name": "Mathematical Expectancy",
+          "benchmark": "Positive net edge > 0",
+          "value": "+0.41% per trade",
+          "status": "CAUTION",
+          "note": "Thin edge vulnerable to slippage"
+        },
+        {
+          "id": 12,
+          "pillar": "Consistency",
+          "name": "Risk : Reward Ratio",
+          "benchmark": ">= 1.0 (AvgWin / AvgLoss)",
+          "value": "1.04 : 1",
+          "status": "CAUTION",
+          "note": "Favorable payoff: profits exceed average losses"
+        },
+        {
+          "id": 13,
+          "pillar": "Reliability of the Numbers",
+          "name": "Trade Count in 3M",
+          "benchmark": ">= 15 - 20 trades (avoid Ratio-Fluxer trap)",
+          "value": "45 trades",
+          "status": "PASS",
+          "note": "Statistically sound sample size"
+        },
+        {
+          "id": 14,
+          "pillar": "Reliability of the Numbers",
+          "name": "Track Record Duration",
+          "benchmark": ">= 6 months active",
+          "value": "Verified live on Stratzy",
+          "status": "PASS",
+          "note": "Battle-tested through multiple expiry cycles and market regimes"
+        },
+        {
+          "id": 15,
+          "pillar": "Reliability of the Numbers",
+          "name": "Backtest vs Live Sanity",
+          "benchmark": "Real live execution match",
+          "value": "Verified Signals",
+          "status": "PASS",
+          "note": "Official past advices confirmed on Stratzy advisor endpoints"
+        },
+        {
+          "id": 16,
+          "pillar": "Fit for Your Account",
+          "name": "Minimum Capital vs Buffer",
+          "benchmark": "<= \u20b91,00,000 (User 1L Cap)",
+          "value": "\u20b9100,000",
+          "status": "PASS",
+          "note": "Fits within user's \u20b91,00,000 capital limit"
+        },
+        {
+          "id": 17,
+          "pillar": "Fit for Your Account",
+          "name": "Risk Classification",
+          "benchmark": "Low or Medium preferred",
+          "value": "High",
+          "status": "CAUTION",
+          "note": "Aggressive volatility tier"
+        },
+        {
+          "id": 18,
+          "pillar": "Fit for Your Account",
+          "name": "Rupee Drawdown on Lot Size",
+          "benchmark": "<= \u20b935,000 on 1 lot",
+          "value": "\u20b927,970",
+          "status": "CAUTION",
+          "note": "Rupee drawdown requires larger buffer"
+        },
+        {
+          "id": 19,
+          "pillar": "Fit for Your Account",
+          "name": "Trade Frequency",
+          "benchmark": "2 - 5 trades/week",
+          "value": "3.5 trades/wk",
+          "status": "PASS",
+          "note": "Optimal trade pacing: fast feedback without over-churn"
+        },
+        {
+          "id": 20,
+          "pillar": "Fit for Your Account",
+          "name": "Charges & Slippage Drag",
+          "benchmark": "< 15% of gross PnL",
+          "value": "~8-12% drag",
+          "status": "PASS",
+          "note": "Spreads and straddles have predictable slippage profiles"
+        },
+        {
+          "id": 21,
+          "pillar": "Portfolio Fit",
+          "name": "Family & Strategy Diversity",
+          "benchmark": "Credit Spread, Straddle & Strangle balance",
+          "value": "Credit Spread",
+          "status": "PASS",
+          "note": "Adds Credit Spread exposure to diversify existing credit spread concentration"
+        },
+        {
+          "id": 22,
+          "pillar": "Portfolio Fit",
+          "name": "Correlation to Held Algos",
+          "benchmark": "Low correlation",
+          "value": "Independent engine",
+          "status": "PASS",
+          "note": "Does not share identical trigger indicators"
+        },
+        {
+          "id": 23,
+          "pillar": "Portfolio Fit",
+          "name": "Live Trade Overlap with Zen/IV/Damper",
+          "benchmark": "0 - 4 overlapping trades",
+          "value": "8 overlapping trades (vs Zen)",
+          "status": "CAUTION",
+          "note": "Moderate overlap"
+        },
+        {
+          "id": 24,
+          "pillar": "Portfolio Fit",
+          "name": "Entry Timing Pattern",
+          "benchmark": "Avoid 10:30-11:00 AM put spikes",
+          "value": "Regime adaptive",
+          "status": "PASS",
+          "note": "Execution time distributed across trading day"
+        },
+        {
+          "id": 25,
+          "pillar": "Portfolio Fit",
+          "name": "Directional & Overnight Balance",
+          "benchmark": "CE/PE & Intraday/Overnight balance",
+          "value": "Non-directional / Hedged",
+          "status": "PASS",
+          "note": "Neutralizes directional index trend bias"
+        }
+      ],
+      "_sim_key": [
+        2.1,
+        5.4,
+        -28.0,
+        148.0,
+        81.0
+      ],
+      "familyGroup": "Credit Spread",
+      "rank": 2
+    },
+    {
+      "id": "68b09f187df2142799a9fa82",
+      "name": "Convex Credit Spread Overnight",
+      "category": "Credit Spread",
+      "sharpe": 1.84,
+      "sortino": 2.92,
+      "calmar": 2.77,
+      "maxDrawdown": -51.64,
+      "trades3M": 36,
+      "winMonth": 64.29,
+      "winQuarter": 83.33,
+      "pnl3M": 61.08,
+      "pnl6M": 133.16,
+      "pnl1Y": 132.39,
+      "minCapital": 100000.0,
+      "rupeeDrawdown": 51640.0,
+      "heldOverlapTrades": 8,
+      "passCount": 18,
+      "cautionCount": 2,
+      "failCount": 5,
+      "criticalFailed": false,
+      "criticalFailReason": null,
+      "institutionalScore": 57.5,
+      "checklist": [
+        {
+          "id": 1,
+          "pillar": "Return and Risk Quality",
+          "name": "Sharpe Ratio",
+          "benchmark": "1.5+ preferred",
+          "value": "1.84",
+          "status": "PASS",
+          "note": "Superior risk-adjusted return density"
+        },
+        {
+          "id": 2,
+          "pillar": "Return and Risk Quality",
+          "name": "Sortino Ratio",
+          "benchmark": "Well above Sharpe",
+          "value": "2.92",
+          "status": "PASS",
+          "note": "Downside risk is heavily truncated"
+        },
+        {
+          "id": 3,
+          "pillar": "Return and Risk Quality",
+          "name": "Calmar Ratio",
+          "benchmark": "2.0+ preferred",
+          "value": "2.77",
+          "status": "PASS",
+          "note": "CAGR comfortably outpaces maximum drawdown"
+        },
+        {
+          "id": 4,
+          "pillar": "Return and Risk Quality",
+          "name": "Max Drawdown %",
+          "benchmark": "Under 25% of buffer",
+          "value": "-51.6%",
+          "status": "FAIL",
+          "note": "Drawdown exceeds safe retail tolerance"
+        },
+        {
+          "id": 5,
+          "pillar": "Return and Risk Quality",
+          "name": "Annualised Volatility",
+          "benchmark": "Lower is better",
+          "value": "73.7%",
+          "status": "FAIL",
+          "note": "Higher volatility swings"
+        },
+        {
+          "id": 6,
+          "pillar": "Return and Risk Quality",
+          "name": "Worst Month Drawdown",
+          "benchmark": "Sit-through tolerance (< 15%)",
+          "value": "-25.2%",
+          "status": "FAIL",
+          "note": "Severe monthly drawdown stretch"
+        },
+        {
+          "id": 7,
+          "pillar": "Return and Risk Quality",
+          "name": "Max Consecutive Losses",
+          "benchmark": "<= 5-6 losses",
+          "value": "5 in a row",
+          "status": "PASS",
+          "note": "Short losing streaks prevent psychological tilt"
+        },
+        {
+          "id": 8,
+          "pillar": "Consistency",
+          "name": "Win-Month %",
+          "benchmark": "70%+ preferred",
+          "value": "64.3%",
+          "status": "CAUTION",
+          "note": "Inconsistent monthly results"
+        },
+        {
+          "id": 9,
+          "pillar": "Consistency",
+          "name": "Win-Quarter %",
+          "benchmark": "75%+ preferred",
+          "value": "83.3%",
+          "status": "PASS",
+          "note": "Robust quarter-by-quarter survival track record"
+        },
+        {
+          "id": 10,
+          "pillar": "Consistency",
+          "name": "3M, 6M & 1Y PnL Positive",
+          "benchmark": "All 3 must be > 0",
+          "value": "3M: +61.1%, 6M: +133.2%, 1Y: +132.4%",
+          "status": "PASS",
+          "note": "True compounding across all periods (no single-cycle illusion)"
+        },
+        {
+          "id": 11,
+          "pillar": "Consistency",
+          "name": "Mathematical Expectancy",
+          "benchmark": "Positive net edge > 0",
+          "value": "+1.75% per trade",
+          "status": "PASS",
+          "note": "Win rate is supported by strong payoff asymmetry"
+        },
+        {
+          "id": 12,
+          "pillar": "Consistency",
+          "name": "Risk : Reward Ratio",
+          "benchmark": ">= 1.0 (AvgWin / AvgLoss)",
+          "value": "1.27 : 1",
+          "status": "PASS",
+          "note": "Favorable payoff: profits exceed average losses"
+        },
+        {
+          "id": 13,
+          "pillar": "Reliability of the Numbers",
+          "name": "Trade Count in 3M",
+          "benchmark": ">= 15 - 20 trades (avoid Ratio-Fluxer trap)",
+          "value": "36 trades",
+          "status": "PASS",
+          "note": "Statistically sound sample size"
+        },
+        {
+          "id": 14,
+          "pillar": "Reliability of the Numbers",
+          "name": "Track Record Duration",
+          "benchmark": ">= 6 months active",
+          "value": "Verified live on Stratzy",
+          "status": "PASS",
+          "note": "Battle-tested through multiple expiry cycles and market regimes"
+        },
+        {
+          "id": 15,
+          "pillar": "Reliability of the Numbers",
+          "name": "Backtest vs Live Sanity",
+          "benchmark": "Real live execution match",
+          "value": "Verified Signals",
+          "status": "PASS",
+          "note": "Official past advices confirmed on Stratzy advisor endpoints"
+        },
+        {
+          "id": 16,
+          "pillar": "Fit for Your Account",
+          "name": "Minimum Capital vs Buffer",
+          "benchmark": "<= \u20b91,00,000 (User 1L Cap)",
+          "value": "\u20b9100,000",
+          "status": "PASS",
+          "note": "Fits within user's \u20b91,00,000 capital limit"
+        },
+        {
+          "id": 17,
+          "pillar": "Fit for Your Account",
+          "name": "Risk Classification",
+          "benchmark": "Low or Medium preferred",
+          "value": "Very high",
+          "status": "FAIL",
+          "note": "Aggressive volatility tier"
+        },
+        {
+          "id": 18,
+          "pillar": "Fit for Your Account",
+          "name": "Rupee Drawdown on Lot Size",
+          "benchmark": "<= \u20b935,000 on 1 lot",
+          "value": "\u20b951,640",
+          "status": "FAIL",
+          "note": "Rupee drawdown requires larger buffer"
+        },
+        {
+          "id": 19,
+          "pillar": "Fit for Your Account",
+          "name": "Trade Frequency",
+          "benchmark": "2 - 5 trades/week",
+          "value": "2.8 trades/wk",
+          "status": "PASS",
+          "note": "Optimal trade pacing: fast feedback without over-churn"
+        },
+        {
+          "id": 20,
+          "pillar": "Fit for Your Account",
+          "name": "Charges & Slippage Drag",
+          "benchmark": "< 15% of gross PnL",
+          "value": "~8-12% drag",
+          "status": "PASS",
+          "note": "Spreads and straddles have predictable slippage profiles"
+        },
+        {
+          "id": 21,
+          "pillar": "Portfolio Fit",
+          "name": "Family & Strategy Diversity",
+          "benchmark": "Credit Spread, Straddle & Strangle balance",
+          "value": "Credit Spread",
+          "status": "PASS",
+          "note": "Adds Credit Spread exposure to diversify existing credit spread concentration"
+        },
+        {
+          "id": 22,
+          "pillar": "Portfolio Fit",
+          "name": "Correlation to Held Algos",
+          "benchmark": "Low correlation",
+          "value": "Independent engine",
+          "status": "PASS",
+          "note": "Does not share identical trigger indicators"
+        },
+        {
+          "id": 23,
+          "pillar": "Portfolio Fit",
+          "name": "Live Trade Overlap with Zen/IV/Damper",
+          "benchmark": "0 - 4 overlapping trades",
+          "value": "8 overlapping trades (vs Damper)",
+          "status": "CAUTION",
+          "note": "Moderate overlap"
+        },
+        {
+          "id": 24,
+          "pillar": "Portfolio Fit",
+          "name": "Entry Timing Pattern",
+          "benchmark": "Avoid 10:30-11:00 AM put spikes",
+          "value": "Regime adaptive",
+          "status": "PASS",
+          "note": "Execution time distributed across trading day"
+        },
+        {
+          "id": 25,
+          "pillar": "Portfolio Fit",
+          "name": "Directional & Overnight Balance",
+          "benchmark": "CE/PE & Intraday/Overnight balance",
+          "value": "Non-directional / Hedged",
+          "status": "PASS",
+          "note": "Neutralizes directional index trend bias"
+        }
+      ],
+      "_sim_key": [
+        1.8,
+        2.8,
+        -51.6,
+        132.0,
+        64.0
+      ],
+      "familyGroup": "Credit Spread",
+      "rank": 3
+    },
+    {
+      "id": "694bb70a3bd0c2a598ba2c74",
+      "name": "Ratio-Return Credit Spread Exit-Early",
+      "category": "Credit Spread",
+      "sharpe": 1.06,
+      "sortino": 1.62,
+      "calmar": 0.91,
+      "maxDrawdown": -48.96,
+      "trades3M": 18,
+      "winMonth": 69.23,
+      "winQuarter": 80.0,
+      "pnl3M": 22.13,
+      "pnl6M": 42.94,
+      "pnl1Y": 74.79,
+      "minCapital": 100000.0,
+      "rupeeDrawdown": 48960.0,
+      "heldOverlapTrades": 0,
+      "passCount": 15,
+      "cautionCount": 5,
+      "failCount": 5,
+      "criticalFailed": false,
+      "criticalFailReason": null,
+      "institutionalScore": 51.1,
+      "checklist": [
+        {
+          "id": 1,
+          "pillar": "Return and Risk Quality",
+          "name": "Sharpe Ratio",
+          "benchmark": "1.5+ preferred",
+          "value": "1.06",
+          "status": "FAIL",
+          "note": "Moderate risk adjustment"
+        },
+        {
+          "id": 2,
+          "pillar": "Return and Risk Quality",
+          "name": "Sortino Ratio",
+          "benchmark": "Well above Sharpe",
+          "value": "1.62",
+          "status": "PASS",
+          "note": "Downside risk is heavily truncated"
+        },
+        {
+          "id": 3,
+          "pillar": "Return and Risk Quality",
+          "name": "Calmar Ratio",
+          "benchmark": "2.0+ preferred",
+          "value": "0.91",
+          "status": "FAIL",
+          "note": "Drawdown recovery buffer is modest"
+        },
+        {
+          "id": 4,
+          "pillar": "Return and Risk Quality",
+          "name": "Max Drawdown %",
+          "benchmark": "Under 25% of buffer",
+          "value": "-49.0%",
+          "status": "FAIL",
+          "note": "Drawdown exceeds safe retail tolerance"
+        },
+        {
+          "id": 5,
+          "pillar": "Return and Risk Quality",
+          "name": "Annualised Volatility",
+          "benchmark": "Lower is better",
+          "value": "59.8%",
+          "status": "CAUTION",
+          "note": "Higher volatility swings"
+        },
+        {
+          "id": 6,
+          "pillar": "Return and Risk Quality",
+          "name": "Worst Month Drawdown",
+          "benchmark": "Sit-through tolerance (< 15%)",
+          "value": "-17.1%",
+          "status": "CAUTION",
+          "note": "Severe monthly drawdown stretch"
+        },
+        {
+          "id": 7,
+          "pillar": "Return and Risk Quality",
+          "name": "Max Consecutive Losses",
+          "benchmark": "<= 5-6 losses",
+          "value": "5 in a row",
+          "status": "PASS",
+          "note": "Short losing streaks prevent psychological tilt"
+        },
+        {
+          "id": 8,
+          "pillar": "Consistency",
+          "name": "Win-Month %",
+          "benchmark": "70%+ preferred",
+          "value": "69.2%",
+          "status": "CAUTION",
+          "note": "Inconsistent monthly results"
+        },
+        {
+          "id": 9,
+          "pillar": "Consistency",
+          "name": "Win-Quarter %",
+          "benchmark": "75%+ preferred",
+          "value": "80.0%",
+          "status": "PASS",
+          "note": "Robust quarter-by-quarter survival track record"
+        },
+        {
+          "id": 10,
+          "pillar": "Consistency",
+          "name": "3M, 6M & 1Y PnL Positive",
+          "benchmark": "All 3 must be > 0",
+          "value": "3M: +22.1%, 6M: +42.9%, 1Y: +74.8%",
+          "status": "PASS",
+          "note": "True compounding across all periods (no single-cycle illusion)"
+        },
+        {
+          "id": 11,
+          "pillar": "Consistency",
+          "name": "Mathematical Expectancy",
+          "benchmark": "Positive net edge > 0",
+          "value": "+1.37% per trade",
+          "status": "PASS",
+          "note": "Win rate is supported by strong payoff asymmetry"
+        },
+        {
+          "id": 12,
+          "pillar": "Consistency",
+          "name": "Risk : Reward Ratio",
+          "benchmark": ">= 1.0 (AvgWin / AvgLoss)",
+          "value": "1.10 : 1",
+          "status": "PASS",
+          "note": "Favorable payoff: profits exceed average losses"
+        },
+        {
+          "id": 13,
+          "pillar": "Reliability of the Numbers",
+          "name": "Trade Count in 3M",
+          "benchmark": ">= 15 - 20 trades (avoid Ratio-Fluxer trap)",
+          "value": "18 trades",
+          "status": "CAUTION",
+          "note": "Statistically sound sample size"
+        },
+        {
+          "id": 14,
+          "pillar": "Reliability of the Numbers",
+          "name": "Track Record Duration",
+          "benchmark": ">= 6 months active",
+          "value": "Verified live on Stratzy",
+          "status": "PASS",
+          "note": "Battle-tested through multiple expiry cycles and market regimes"
+        },
+        {
+          "id": 15,
+          "pillar": "Reliability of the Numbers",
+          "name": "Backtest vs Live Sanity",
+          "benchmark": "Real live execution match",
+          "value": "Verified Signals",
+          "status": "PASS",
+          "note": "Official past advices confirmed on Stratzy advisor endpoints"
+        },
+        {
+          "id": 16,
+          "pillar": "Fit for Your Account",
+          "name": "Minimum Capital vs Buffer",
+          "benchmark": "<= \u20b91,00,000 (User 1L Cap)",
+          "value": "\u20b9100,000",
+          "status": "PASS",
+          "note": "Fits within user's \u20b91,00,000 capital limit"
+        },
+        {
+          "id": 17,
+          "pillar": "Fit for Your Account",
+          "name": "Risk Classification",
+          "benchmark": "Low or Medium preferred",
+          "value": "Very high",
+          "status": "FAIL",
+          "note": "Aggressive volatility tier"
+        },
+        {
+          "id": 18,
+          "pillar": "Fit for Your Account",
+          "name": "Rupee Drawdown on Lot Size",
+          "benchmark": "<= \u20b935,000 on 1 lot",
+          "value": "\u20b948,960",
+          "status": "FAIL",
+          "note": "Rupee drawdown requires larger buffer"
+        },
+        {
+          "id": 19,
+          "pillar": "Fit for Your Account",
+          "name": "Trade Frequency",
+          "benchmark": "2 - 5 trades/week",
+          "value": "1.4 trades/wk",
+          "status": "CAUTION",
+          "note": "Optimal trade pacing: fast feedback without over-churn"
+        },
+        {
+          "id": 20,
+          "pillar": "Fit for Your Account",
+          "name": "Charges & Slippage Drag",
+          "benchmark": "< 15% of gross PnL",
+          "value": "~8-12% drag",
+          "status": "PASS",
+          "note": "Spreads and straddles have predictable slippage profiles"
+        },
+        {
+          "id": 21,
+          "pillar": "Portfolio Fit",
+          "name": "Family & Strategy Diversity",
+          "benchmark": "Credit Spread, Straddle & Strangle balance",
+          "value": "Credit Spread",
+          "status": "PASS",
+          "note": "Adds Credit Spread exposure to diversify existing credit spread concentration"
+        },
+        {
+          "id": 22,
+          "pillar": "Portfolio Fit",
+          "name": "Correlation to Held Algos",
+          "benchmark": "Low correlation",
+          "value": "Independent engine",
+          "status": "PASS",
+          "note": "Does not share identical trigger indicators"
+        },
+        {
+          "id": 23,
+          "pillar": "Portfolio Fit",
+          "name": "Live Trade Overlap with Zen/IV/Damper",
+          "benchmark": "0 - 4 overlapping trades",
+          "value": "0 overlapping trades",
+          "status": "PASS",
+          "note": "Excellent: Clean non-overlapping signals (zero duplicate lots)"
+        },
+        {
+          "id": 24,
+          "pillar": "Portfolio Fit",
+          "name": "Entry Timing Pattern",
+          "benchmark": "Avoid 10:30-11:00 AM put spikes",
+          "value": "Regime adaptive",
+          "status": "PASS",
+          "note": "Execution time distributed across trading day"
+        },
+        {
+          "id": 25,
+          "pillar": "Portfolio Fit",
+          "name": "Directional & Overnight Balance",
+          "benchmark": "CE/PE & Intraday/Overnight balance",
+          "value": "Non-directional / Hedged",
+          "status": "PASS",
+          "note": "Neutralizes directional index trend bias"
+        }
+      ],
+      "_sim_key": [
+        1.1,
+        0.9,
+        -49.0,
+        75.0,
+        69.0
+      ],
+      "familyGroup": "Credit Spread",
+      "rank": 4
+    },
+    {
+      "id": "69c3702d12ed76b963d4db84",
+      "name": "Catalyst Partial Target",
+      "category": "Option Buying",
+      "sharpe": 0.66,
+      "sortino": 1.2,
+      "calmar": 0.43,
+      "maxDrawdown": -41.55,
+      "trades3M": 31,
+      "winMonth": 61.54,
+      "winQuarter": 60.0,
+      "pnl3M": 14.7,
+      "pnl6M": 39.46,
+      "pnl1Y": 59.75,
+      "minCapital": 55000.0,
+      "rupeeDrawdown": 22852.0,
+      "heldOverlapTrades": 0,
+      "passCount": 14,
+      "cautionCount": 5,
+      "failCount": 6,
+      "criticalFailed": false,
+      "criticalFailReason": null,
+      "institutionalScore": 48.3,
+      "checklist": [
+        {
+          "id": 1,
+          "pillar": "Return and Risk Quality",
+          "name": "Sharpe Ratio",
+          "benchmark": "1.5+ preferred",
+          "value": "0.66",
+          "status": "FAIL",
+          "note": "Moderate risk adjustment"
+        },
+        {
+          "id": 2,
+          "pillar": "Return and Risk Quality",
+          "name": "Sortino Ratio",
+          "benchmark": "Well above Sharpe",
+          "value": "1.20",
+          "status": "PASS",
+          "note": "Downside risk is heavily truncated"
+        },
+        {
+          "id": 3,
+          "pillar": "Return and Risk Quality",
+          "name": "Calmar Ratio",
+          "benchmark": "2.0+ preferred",
+          "value": "0.43",
+          "status": "FAIL",
+          "note": "Drawdown recovery buffer is modest"
+        },
+        {
+          "id": 4,
+          "pillar": "Return and Risk Quality",
+          "name": "Max Drawdown %",
+          "benchmark": "Under 25% of buffer",
+          "value": "-41.5%",
+          "status": "FAIL",
+          "note": "Drawdown exceeds safe retail tolerance"
+        },
+        {
+          "id": 5,
+          "pillar": "Return and Risk Quality",
+          "name": "Annualised Volatility",
+          "benchmark": "Lower is better",
+          "value": "65.1%",
+          "status": "FAIL",
+          "note": "Higher volatility swings"
+        },
+        {
+          "id": 6,
+          "pillar": "Return and Risk Quality",
+          "name": "Worst Month Drawdown",
+          "benchmark": "Sit-through tolerance (< 15%)",
+          "value": "-28.1%",
+          "status": "FAIL",
+          "note": "Severe monthly drawdown stretch"
+        },
+        {
+          "id": 7,
+          "pillar": "Return and Risk Quality",
+          "name": "Max Consecutive Losses",
+          "benchmark": "<= 5-6 losses",
+          "value": "7 in a row",
+          "status": "CAUTION",
+          "note": "Extended losing streak risk"
+        },
+        {
+          "id": 8,
+          "pillar": "Consistency",
+          "name": "Win-Month %",
+          "benchmark": "70%+ preferred",
+          "value": "61.5%",
+          "status": "CAUTION",
+          "note": "Inconsistent monthly results"
+        },
+        {
+          "id": 9,
+          "pillar": "Consistency",
+          "name": "Win-Quarter %",
+          "benchmark": "75%+ preferred",
+          "value": "60.0%",
+          "status": "CAUTION",
+          "note": "Vulnerable to quarterly regime shifts"
+        },
+        {
+          "id": 10,
+          "pillar": "Consistency",
+          "name": "3M, 6M & 1Y PnL Positive",
+          "benchmark": "All 3 must be > 0",
+          "value": "3M: +14.7%, 6M: +39.5%, 1Y: +59.8%",
+          "status": "PASS",
+          "note": "True compounding across all periods (no single-cycle illusion)"
+        },
+        {
+          "id": 11,
+          "pillar": "Consistency",
+          "name": "Mathematical Expectancy",
+          "benchmark": "Positive net edge > 0",
+          "value": "+3.17% per trade",
+          "status": "PASS",
+          "note": "Win rate is supported by strong payoff asymmetry"
+        },
+        {
+          "id": 12,
+          "pillar": "Consistency",
+          "name": "Risk : Reward Ratio",
+          "benchmark": ">= 1.0 (AvgWin / AvgLoss)",
+          "value": "1.70 : 1",
+          "status": "PASS",
+          "note": "Favorable payoff: profits exceed average losses"
+        },
+        {
+          "id": 13,
+          "pillar": "Reliability of the Numbers",
+          "name": "Trade Count in 3M",
+          "benchmark": ">= 15 - 20 trades (avoid Ratio-Fluxer trap)",
+          "value": "31 trades",
+          "status": "PASS",
+          "note": "Statistically sound sample size"
+        },
+        {
+          "id": 14,
+          "pillar": "Reliability of the Numbers",
+          "name": "Track Record Duration",
+          "benchmark": ">= 6 months active",
+          "value": "Verified live on Stratzy",
+          "status": "PASS",
+          "note": "Battle-tested through multiple expiry cycles and market regimes"
+        },
+        {
+          "id": 15,
+          "pillar": "Reliability of the Numbers",
+          "name": "Backtest vs Live Sanity",
+          "benchmark": "Real live execution match",
+          "value": "Verified Signals",
+          "status": "PASS",
+          "note": "Official past advices confirmed on Stratzy advisor endpoints"
+        },
+        {
+          "id": 16,
+          "pillar": "Fit for Your Account",
+          "name": "Minimum Capital vs Buffer",
+          "benchmark": "<= \u20b91,00,000 (User 1L Cap)",
+          "value": "\u20b955,000",
+          "status": "PASS",
+          "note": "Fits within user's \u20b91,00,000 capital limit"
+        },
+        {
+          "id": 17,
+          "pillar": "Fit for Your Account",
+          "name": "Risk Classification",
+          "benchmark": "Low or Medium preferred",
+          "value": "Very high",
+          "status": "FAIL",
+          "note": "Aggressive volatility tier"
+        },
+        {
+          "id": 18,
+          "pillar": "Fit for Your Account",
+          "name": "Rupee Drawdown on Lot Size",
+          "benchmark": "<= \u20b935,000 on 1 lot",
+          "value": "\u20b922,852",
+          "status": "PASS",
+          "note": "Absolute worst-case rupee loss fits within cash buffer"
+        },
+        {
+          "id": 19,
+          "pillar": "Fit for Your Account",
+          "name": "Trade Frequency",
+          "benchmark": "2 - 5 trades/week",
+          "value": "2.4 trades/wk",
+          "status": "PASS",
+          "note": "Optimal trade pacing: fast feedback without over-churn"
+        },
+        {
+          "id": 20,
+          "pillar": "Fit for Your Account",
+          "name": "Charges & Slippage Drag",
+          "benchmark": "< 15% of gross PnL",
+          "value": "~8-12% drag",
+          "status": "CAUTION",
+          "note": "Spreads and straddles have predictable slippage profiles"
+        },
+        {
+          "id": 21,
+          "pillar": "Portfolio Fit",
+          "name": "Family & Strategy Diversity",
+          "benchmark": "Credit Spread, Straddle & Strangle balance",
+          "value": "Option Buying",
+          "status": "PASS",
+          "note": "Adds Option Buying exposure to diversify existing credit spread concentration"
+        },
+        {
+          "id": 22,
+          "pillar": "Portfolio Fit",
+          "name": "Correlation to Held Algos",
+          "benchmark": "Low correlation",
+          "value": "Independent engine",
+          "status": "PASS",
+          "note": "Does not share identical trigger indicators"
+        },
+        {
+          "id": 23,
+          "pillar": "Portfolio Fit",
+          "name": "Live Trade Overlap with Zen/IV/Damper",
+          "benchmark": "0 - 4 overlapping trades",
+          "value": "0 overlapping trades",
+          "status": "PASS",
+          "note": "Excellent: Clean non-overlapping signals (zero duplicate lots)"
+        },
+        {
+          "id": 24,
+          "pillar": "Portfolio Fit",
+          "name": "Entry Timing Pattern",
+          "benchmark": "Avoid 10:30-11:00 AM put spikes",
+          "value": "Regime adaptive",
+          "status": "PASS",
+          "note": "Execution time distributed across trading day"
+        },
+        {
+          "id": 25,
+          "pillar": "Portfolio Fit",
+          "name": "Directional & Overnight Balance",
+          "benchmark": "CE/PE & Intraday/Overnight balance",
+          "value": "Non-directional / Hedged",
+          "status": "CAUTION",
+          "note": "Neutralizes directional index trend bias"
+        }
+      ],
+      "_sim_key": [
+        0.7,
+        0.4,
+        -41.5,
+        60.0,
+        62.0
+      ],
+      "familyGroup": "Option Buying",
+      "rank": 5
+    }
+  ],
+  "totalEvaluated": 6,
+  "passedEligible": 5,
+  "timestamp": 1792153352.334487
+}

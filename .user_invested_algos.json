@@ -1,0 +1,41 @@
+[
+  {
+    "id": "68596cd26aa2cba24bbb67da",
+    "name": "Zen Credit Spread Overnight",
+    "broker": "DHAN",
+    "category": "Index Strategies",
+    "amountDeployed": 0,
+    "investedAmount": 100000,
+    "activeTrades": 0,
+    "overallPnL": -4010.5,
+    "stratzyOverallPnl": -4010.5,
+    "stratzyCurrentPnl": 0.0,
+    "stratzyTrades": 15
+  },
+  {
+    "id": "687d0a309107a80e07401e5d",
+    "name": "IV-Imbalance Credit Spread Overnight",
+    "broker": "DHAN",
+    "category": "Index Strategies",
+    "amountDeployed": 53383,
+    "investedAmount": 100000,
+    "activeTrades": 2,
+    "overallPnL": -6519.5,
+    "stratzyOverallPnl": -6519.5,
+    "stratzyCurrentPnl": 0.0,
+    "stratzyTrades": 14
+  },
+  {
+    "id": "68c9b755c7ed8fff5c5de9af",
+    "name": "Damper Credit Spread",
+    "broker": "DHAN",
+    "category": "Index Strategies",
+    "amountDeployed": 0,
+    "investedAmount": 100000,
+    "activeTrades": 0,
+    "overallPnL": -1361.75,
+    "stratzyOverallPnl": -1361.75,
+    "stratzyCurrentPnl": 1374.75,
+    "stratzyTrades": 29
+  }
+]
